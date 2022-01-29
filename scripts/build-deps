@@ -45,6 +45,7 @@ echo ./configure
     --disable-debug \
     --disable-static \
     --disable-stripping \
+    --disable-mmx \
     --enable-gpl \
     --enable-libx264 \
     --enable-shared \
