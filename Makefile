@@ -1,5 +1,5 @@
 LDFLAGS ?= ""
-CFLAGS ?= "-O0"
+CFLAGS ?= "-O2"
 
 PYAV_PYTHON ?= python
 PYTHON := $(PYAV_PYTHON)
@@ -11,7 +11,7 @@ default: build
 
 
 build:
-	CFLAGS=$(CFLAGS) LDFLAGS=$(LDFLAGS) $(PYTHON) setup.py build_ext --inplace --debug
+	CFLAGS=$(CFLAGS) LDFLAGS=$(LDFLAGS) $(PYTHON) setup.py build_ext --inplace
 
 cythonize:
 	$(PYTHON) setup.py cythonize
