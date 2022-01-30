@@ -41,13 +41,13 @@ cd $PYAV_LIBRARY
 
 echo ./configure
 ./configure \
-    --disable-doc \
     --disable-debug \
+    --disable-doc \
     --disable-static \
     --disable-stripping \
-    --disable-mmx \
     --enable-gpl \
     --enable-libx264 \
+    --enable-nonfree \
     --enable-shared \
     --prefix="$PYAV_LIBRARY_PREFIX" \
     || exit 2
