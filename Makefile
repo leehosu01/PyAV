@@ -1,5 +1,5 @@
 LDFLAGS ?= ""
-CFLAGS ?= "-O2"
+CFLAGS ?= "-march=native -Ofast -pipe"
 
 PYAV_PYTHON ?= python
 PYTHON := $(PYAV_PYTHON)
